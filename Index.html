@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="Imagess/Logo.png" alt="logo" />
+    </header>
+    <main class="content-main">
+      <section class="content-action">
+        <textarea
+          id="userText"
+          class="input-text"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+
+        <div class="info">
+          <img src="Imagess/Info.png" />
+          <p>Solo letras minúculas y sin acentos</p>
+        </div>
+        <div class="actions">
+          <button class="button button-main" id="btn-encrypt">Encriptar</button>
+          <button class="button button-secundary" id="btn-decript">
+            Desescriptar
+          </button>
+        </div>
+      </section>
+
+      <div class="message" id="empty">
+        <header class="header-secundary">
+          <img src="Imagess/Muñeco.png" alt="Muñeco" />
+        </header>
+        <p class="text-main">
+          <strong>Ningún mensaje fue encontrado</strong>
+        </p>
+        <p class="text-secundary">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+      </div>
+
+      <p class="message empty" id="result"></p>
+
+      <!-- <section class="result">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
+          laudantium, assumenda quaerat cupiditate autem omnis debitis culpa,
+          sit ipsam, perferendis consequatur vel repellendus! Tempora vitae,
+          velit eius ipsam vel consequatur?
+        </p>
+
+        <button class="button button-secundary">Copiar</button>
+      </section> -->
+    </main>
+
+    <footer>
+      <p class="copyright"><strong> Curso Altura &copy 2023 </strong></p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/stefanny-marquez-520580220/">
+          <img src="Imagess/LinkedIn.png" alt="LinkedIn" />
+        </a>
+        <a href="">
+          <img
+            src="Imagess/GitHub.png"
+            alt="GitHub"
+            width="30px"
+            height="30px"
+          />
+        </a>
+      </div>
+    </footer>
+    <!-- <button>Encriptar
+    </button>
+
+    <button class="onclik"></button> -->
+  </body>
+  <script src="./textActions.js" type="module"></script>
+</html>
